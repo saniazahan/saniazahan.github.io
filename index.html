@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-ul {
-    list-style-type: '- ';
-}
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +15,17 @@ ul {
   -->
   <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/> 
   <!--Replace with your tailwind.css once created-->
-
+  <style>
+      ul {
+        list-style-type: none;
+        color:darkslateblue;
+      }
+      ul li:before {
+        content: '\2013';
+        position: absolute;
+        margin-left: -15px;
+      }
+    </style>
 </head>
 
 <body class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover" style="background-image:url('https://source.unsplash.com/1L71sPT5XKc');">
@@ -62,11 +70,11 @@ ul {
 			<h2 class="text-3xl font-bold pt-8 lg:pt-0">News</h2>
 			<div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
 			<strong>2024</strong>			 
-			<ul style="list-style-type:-;">
+			<ul>
 			  <li>Visiting Pattern Processing Lab at University of Aizu to initiate Research Collaboration, April 2024</li>
 			</ul>
 			<strong>20234</strong>
-			<ul style="list-style-type:-;">
+			<ul>
 			  <li>Attending CVPR 2023 at Vancouver, Cananda</li>
 			  <li>Paper accepted at FGAHI@CVPR 2023</li>
 			  <li>PSA Conference Travel Award, 2023</li>
