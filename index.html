@@ -21,18 +21,11 @@
 	  right: 0;
 	  top: 0;
 	} 
-      ul {
-        list-style-type: none;
-      }
-      ul li:before {
-        content: '\2014';
-        position: absolute;
-        margin-left: -20px;
-      }
-	  li::before {
-        content: none !important;
-        display: none !important;
-    }
+    .with-tick::before {
+		content: '✓';
+		color: green;
+		margin-right: 0.5rem;
+	}
       .myDiv {
 	  margin: 30px;
 	}
@@ -128,23 +121,23 @@
 			<strong>2025</strong>	
 			<div class="myDiv">
 				<ul>
-					<li>Working on a super cool problem!</li>
+					<li class="with-tick"> Working on a super cool problem!</li>
 				</ul>
 			</div>
 			<strong>2024</strong>	
 			<div class="myDiv">
 				<ul>
-					<li>Submitted thesis YAY!!!</li>				
-					<li>Visited Pattern Processing Lab at University of Aizu to initiate Research Collaboration, April 2024</li>
+					<li class="with-tick">Submitted thesis YAY!!!</li>				
+					<li class="with-tick">Visited Pattern Processing Lab at University of Aizu to initiate Collaboration</li>
 				</ul>
 			</div>
 			<strong>2023</strong>			
 			<div class="myDiv">			
 				<ul>
-					<li>Attended CVPR 2023 at Vancouver, Cananda</li>
-				  	<li>Paper accepted at FGAHI@CVPR 2023</li>
-				  	<li>Winner: Incite Award - Postgraduate Research</li>
-				  	<li>Runner up: Incite Award - Social Impact</li>
+					<li class="with-tick">Attended CVPR 2023 at Vancouver, Cananda</li>
+				  	<li class="with-tick">Paper accepted at FGAHI@CVPR 2023</li>
+				  	<li class="with-tick">Winner: Incite Award - Postgraduate Research</li>
+				  	<li class="with-tick">Runner up: Incite Award - Social Impact</li>
 				</ul>
 			</div>
 			<h2 class="text-3xl font-bold pt-8 lg:pt-0">Spotlight Projects</h2>
