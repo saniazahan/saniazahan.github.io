@@ -29,6 +29,10 @@
         position: absolute;
         margin-left: -20px;
       }
+	  li::before {
+        content: none !important;
+        display: none !important;
+    }
       .myDiv {
 	  margin: 30px;
 	}
@@ -56,21 +60,30 @@
 		<div style="margin: 10px;"></div>
 		<div class="w-54 bg-gray-100 rounded-lg shadow-lg p-4">
 		    <ul class="space-y-4" style="list-style: none; margin: 0; padding: 0;">
-		        <li>
-					<a href="./project.html" class="block bg-blue-500 text-white rounded-md px-4 py-2 text-center hover:bg-blue-600">
-		            Project
+				<li>
+					<a href="./index.html" class="block bg-blue-500 text-white rounded-md px-4 py-2 text-center hover:bg-blue-600">
+		            	Home
 					</a>
 		        </li>
-		        <li class="bg-blue-500 text-white rounded-md px-4 py-2 text-center hover:bg-blue-600">
-		            Activity
+		        <li>
+					<a href="./project.html" class="block bg-blue-500 text-white rounded-md px-4 py-2 text-center hover:bg-blue-600">
+		            	Project
+					</a>
+		        </li>
+		        <li>
+		            <a href="./activity.html" class="block bg-blue-500 text-white rounded-md px-4 py-2 text-center hover:bg-blue-600">
+						Activity
+					</a>
 		        </li>
 		        <li>
 					<a href="./cv.pdf" target="_blank" rel="noopener noreferrer" class="block bg-blue-500 text-white rounded-md px-4 py-2 text-center hover:bg-blue-600">
-		            CV
+		            	CV
 					</a>
 		        </li>
-		        <li class="bg-blue-500 text-white rounded-md px-4 py-2 text-center hover:bg-blue-600">
-		            Contact
+		        <li>
+					<a href="./contact.html" class="block bg-blue-500 text-white rounded-md px-4 py-2 text-center hover:bg-blue-600">
+		            	Contact
+					</a>
 		        </li>
 		    </ul>
 		</div>
