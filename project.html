@@ -1,166 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Sania Zahan</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta name="author" content="">
-
-  <!-- Font Awesome if you need it
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-  -->
-  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/> 
-  <!--Replace with your tailwind.css once created-->
-  <style>
-      .float-right-top {
-	  position: absolute;
-	  right: 0;
-	  top: 0;
-	} 
-      ul {
-        list-style-type: none;
-      }
-      ul li:before {
-        content: '\2014';
-        position: absolute;
-        margin-left: -20px;
-      }
-      li::before {
-        content: none !important;
-        display: none !important;
-    }
-      .myDiv {
-	  margin: 30px;
-	}
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Sania Zahan</title>
+<meta name="description" content="Research projects by Sania Zahan spanning computer vision for healthcare, gait analysis, and mRNA technology.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
 </head>
+<body>
 
-<body class="font-sans antialiased text-gray-100 leading-normal tracking-wider bg-cover" style="background-image:url('https://github.com/saniazahan/saniazahan.github.io/blob/main/bgd.jpg?raw=true');">
-<!--<body class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover" style="background-color: #f0f0f0;"> -->
-
-<!-- Profile Picture 
-  <img src="IMG_20220918_105300.png" alt="Profile Picture" 
-       style="position: absolute; top: 20px; left: 20px; width: 100px; height: 100px; border-radius: 50%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"> -->
-
-  <div style="margin: 30px;"></div>
-
-  <div class="max-w-6xl flex h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
-
-	<!--Img Col-->
-	<div class="w-full lg:w-1/5">
-	<!-- <div class="lg:w-1/5 lg:flex lg:flex-col lg:justify-start">-->
-		<!-- Big profile image for side bar (desktop) 
-		<img src="https://source.unsplash.com/MP0IUfwrn0A" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block"> -->
-		<img src="https://github.com/saniazahan/saniazahan.github.io/blob/main/IMG_20220918_105300.png?raw=true" class="rounded-xl lg:rounded-2xl shadow-2xl hidden lg:block"> 
-		<!-- Image from: http://unsplash.com/photos/MP0IUfwrn0A -->
-		<div style="margin: 10px;"></div>
-		<div class="w-54 bg-gray-900 rounded-lg shadow-lg p-4">
-		    <ul class="space-y-4" style="list-style: none; margin: 0; padding: 0;">
-				<li>
-					<a href="./index.html" class="block bg-green-700 text-white rounded-md px-4 py-2 text-center hover:bg-green-900">
-		            	Home
-					</a>
-		        </li>
-		        <li>
-					<a href="./project.html" class="block bg-green-700 text-white rounded-md px-4 py-2 text-center hover:bg-green-900">
-		            	Project
-					</a>
-		        </li>
-		        <li>
-		            <a href="./activity.html" class="block bg-green-700 text-white rounded-md px-4 py-2 text-center hover:bg-green-900">
-						Activity
-					</a>
-		        </li>
-		        <li>
-					<a href="./cv.pdf" target="_blank" rel="noopener noreferrer" class="block bg-green-700 text-white rounded-md px-4 py-2 text-center hover:bg-green-900">
-		            	CV
-					</a>
-		        </li>
-		        <li>
-					<a href="./contact.html" class="block bg-green-700 text-white rounded-md px-4 py-2 text-center hover:bg-green-900">
-		            	Contact
-					</a>
-		        </li>
-		    </ul>
-		</div>
-
-	</div>
-	  
-	<!--Main Col-->
-	<div id="profile" class="w-full lg:w-4/5 bg-gray-900 lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-gray-900 opacity-95 mx-6 lg:mx-0">
-	
-
-		<div class="p-4 md:p-12 text-center lg:text-left">
-			<!-- Image for mobile view-->
-			<div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style="background-image: url('https://github.com/saniazahan/saniazahan.github.io/blob/main/IMG_20220918_105300.png?raw=true')"></div>
-						
-			<h2 class="text-3xl font-bold pt-8 lg:pt-0">Spotlight Projects</h2>
-			<div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
-			<strong>Human Gesture and Gait Analysis for Autism Detection</strong>	
-			<div style="color:white;background-color:white; text-align:center">
-				<img src="./images/model_cls_fgahi_2023.png" alt="Model Asymetric Gait" width="900">
-			</div>
-		</div>
-
-	</div>
-	
-	<!--Img Col-->
-	<!-- <div class="w-full lg:w-1/5">
-	<div class="lg:w-1/5 lg:flex lg:flex-col lg:justify-start">
-		<!-- Big profile image for side bar (desktop) 
-		<img src="https://source.unsplash.com/MP0IUfwrn0A" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block"> -->
-		<!--<img src="https://github.com/saniazahan/saniazahan.github.io/blob/main/IMG_20220918_105300.png?raw=true" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block"> 
-		<!-- Image from: http://unsplash.com/photos/MP0IUfwrn0A -->
-		
-	<!--</div> -->
-	
-	
-	<!-- Pin to top right corner -->
-	  <div class="absolute top-0 right-0 h-12 w-18 p-4">
-		<button class="js-change-theme focus:outline-none">☀️</button>
-	  </div>
-
+<div class="topbar">
+  <span class="topbar__name">Sania Zahan</span>
+  <button class="topbar__toggle" aria-expanded="false">Menu</button>
 </div>
 
-	<script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
-	<script src="https://unpkg.com/tippy.js@4"></script>
-	<script>
-		//Init tooltips
-		tippy('.link',{
-		  placement: 'bottom'
-		})
+<div class="shell">
 
-		//Toggle mode
-		const toggle = document.querySelector('.js-change-theme');
-		const body = document.querySelector('body');
-		const profile = document.getElementById('profile');
-		
-		
-		toggle.addEventListener('click', () => {
+  <aside class="sidebar">
 
-		  if (body.classList.contains('text-gray-900')) {
-			toggle.innerHTML = "☀️";
-			body.classList.remove('text-gray-900');
-			body.classList.add('text-gray-100');
-			profile.classList.remove('bg-white');
-			profile.classList.add('bg-gray-900');
-		  } else
-		  {
-			toggle.innerHTML = "🌙";
-			body.classList.remove('text-gray-100');
-			body.classList.add('text-gray-900');
-			profile.classList.remove('bg-gray-900');			
-			profile.classList.add('bg-white');
-			
-		  }
-		});
-		
-    </script>
-	
+    <div class="sidebar__photo">
+      <img src="./images/profile.png" alt="Sania Zahan in the field">
+    </div>
+
+    <div class="sidebar__id">
+      <h1>Sania Zahan</h1>
+      <p>PhD · Computer Vision &amp; Applied ML</p>
+    </div>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="./index.html">Overview</a>
+      <a href="./project.html" class="is-active">Projects</a>
+      <a href="./activity.html">Activity</a>
+      <a href="./volunteering.html">Volunteering</a>
+      <a href="./fun-quests.html">Fun Quests</a>
+      <a href="./contact.html">Contact</a>
+      <a href="./cv.pdf" target="_blank" rel="noopener noreferrer">CV <span class="mark">↗</span></a>
+    </nav>
+
+    <div class="sidebar__socials">
+      <a href="https://github.com/saniazahan" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+      </a>
+      <a href="mailto:sania.zahan@uwa.edu.au" aria-label="Email">
+        <svg viewBox="0 0 24 24"><path d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm19.4 2H2.6L12 12.6 21.4 6zM3 8.2V18h18V8.2l-9 6.3-9-6.3z"/></svg>
+      </a>
+      <a href="https://scholar.google.com" aria-label="Google Scholar" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24"><path d="M12 2 1 9l4 2.5V19l7 3 7-3v-7.5L21 10v6h2V9L12 2zm0 2.3L18.8 9 12 13.3 5.2 9 12 4.3zM7 12.8l5 3.1 5-3.1v5.1l-5 2.1-5-2.1v-5.1z"/></svg>
+      </a>
+    </div>
+  </aside>
+
+  <main class="main" id="main">
+
+    <section class="hero">
+      <p class="eyebrow">Projects</p>
+      <h1>Work built to be used, not just cited.</h1>
+      <p class="tagline">A selection of research projects, from published, deployable models to work still in progress.</p>
+    </section>
+
+    <section class="cards-section">
+      <div class="cards">
+
+        <article class="card">
+          <div class="card__figure">
+            <img src="./images/model_cls_fgahi_2023.png" alt="Model architecture for classifying asymmetric gait patterns"
+                 onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'fallback',textContent:'Figure: model_cls_fgahi_2023.png — add this image to /images to display it.'}))">
+          </div>
+          <div class="card__body">
+            <span class="card__status">Published · CVPR FGAHI 2023</span>
+            <h3>Human Gesture and Gait Analysis for Autism Detection</h3>
+            <p>A computer vision pipeline that reads gesture and gait patterns from video to support earlier, lower-cost autism screening — designed around footage a clinic can realistically capture, not a motion-capture lab.</p>
+            <div class="card__meta">
+              <span>Computer Vision</span>
+              <span>Healthcare</span>
+              <span>Deep Learning</span>
+            </div>
+            <div class="card__links">
+              <a href="https://github.com/saniazahan" target="_blank" rel="noopener noreferrer">Code →</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">Paper →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__figure">
+            <div class="fallback">Figure coming soon</div>
+          </div>
+          <div class="card__body">
+            <span class="card__status is-active">In progress</span>
+            <h3>Context-Inspired Modelling for mRNA Technology</h3>
+            <p>Current work applying the same "model the real constraints" philosophy from healthcare and sport to mRNA technology. More detail to follow as the project matures.</p>
+            <div class="card__meta">
+              <span>mRNA</span>
+              <span>Machine Learning</span>
+              <span>Bio-signal Processing</span>
+            </div>
+            <div class="card__links">
+              <a href="./contact.html">Ask about this →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <span>© 2025 Sania Zahan</span>
+      <span>Perth, Western Australia</span>
+    </footer>
+
+  </main>
+</div>
+
+<script src="./js/main.js"></script>
 </body>
-
 </html>
