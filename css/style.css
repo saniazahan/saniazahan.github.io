@@ -575,3 +575,120 @@ section:last-of-type{ margin-bottom:48px; }
     background:none;
   }
 }
+
+/* ---------- Interactive World Map (Global Styles) ---------- */
+#world-map {
+  width: 100%;
+  height: 480px;
+  min-height: 480px;
+  border-radius: 12px;
+  border: 1px solid var(--rule-strong);
+  overflow: hidden;
+  background: var(--ink-2);
+  position: relative;
+  z-index: 1;
+  display: block;
+}
+
+/* Custom Marker Styling */
+.custom-map-pin {
+  background: transparent !important;
+  border: none !important;
+}
+
+.pin-dot {
+  width: 14px;
+  height: 14px;
+  background-color: var(--amber);
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(217, 166, 46, 0.9);
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.pin-dot:hover {
+  transform: scale(1.4);
+  background-color: #eab63c;
+}
+
+/* Leaflet Popup Theme Tweaks */
+.leaflet-popup-content-wrapper {
+  background: var(--ink-2) !important;
+  color: var(--paper) !important;
+  border: 1px solid var(--rule-strong);
+  border-radius: 6px;
+  font-family: var(--mono);
+}
+
+.leaflet-popup-tip {
+  background: var(--ink-2) !important;
+}
+
+.map-popup-btn {
+  display: inline-block;
+  margin-top: 8px;
+  color: var(--amber);
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+/* ---------- Gallery Modal ---------- */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(18, 25, 27, 0.88);
+  backdrop-filter: blur(4px);
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal.is-active {
+  display: flex;
+}
+
+.modal__content {
+  background: var(--ink-2);
+  border: 1px solid var(--rule-strong);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 800px;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 28px;
+  position: relative;
+}
+
+.modal__close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: var(--paper-dim);
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.modal__close:hover {
+  color: var(--amber);
+}
+
+.modal__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.modal__grid img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--rule);
+}

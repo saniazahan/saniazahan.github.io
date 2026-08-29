@@ -9,6 +9,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<!-- Leaflet CSS (MUST be included BEFORE the JS script) -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </head>
 <body>
 
@@ -60,6 +67,25 @@
       <h1>Off the clock.</h1>
       <p class="tagline">Nature, wildlife, and photography — the pursuits that keep the researcher instinct sharp.</p>
     </section>
+
+    <section class="travel-map-section">
+      <div class="section-head">
+        <p class="eyebrow">Travel &amp; Quests</p>
+        <h2>World Tour!!!</h2>
+      </div>
+
+      <div id="world-map"></div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div id="gallery-modal" class="modal">
+      <div class="modal__content">
+        <button class="modal__close" aria-label="Close modal">&times;</button>
+        <h3 id="modal-title">Location Title</h3>
+        <p id="modal-details" style="margin-top: 8px; font-size: 0.9rem; color: var(--paper-dim);"></p>
+        <div id="modal-grid" class="modal__grid"></div>
+      </div>
+    </div>
 
     <section class="activity-groups">
 
